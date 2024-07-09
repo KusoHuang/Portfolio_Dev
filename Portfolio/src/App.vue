@@ -3,8 +3,26 @@ import { RouterLink, RouterView } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
 </script>
 
+
+
 <template>
-  <header>
+  <!-- 頂部區塊 -->
+
+  <div class="bg-primary stack-container ">
+    <!-- 下層 -->
+    <div class="bg-warning container">
+      <p>123</p>
+    </div>
+    <!-- 上層 -->
+    <div class="bg-danger container">
+      <p>456</p>
+    </div>
+
+  </div>
+
+
+  <!-- Vue 原本的內容 -->
+  <header class="container mt-5">
     <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
 
     <div class="wrapper">
@@ -17,10 +35,31 @@ import HelloWorld from './components/HelloWorld.vue'
     </div>
   </header>
 
-  <RouterView />
+  <RouterView class="container" />
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
+// 頂部區塊堆疊 Scss
+.stack-container {
+  position: relative;
+  height: 100vh;
+}
+
+.stack-container .container {
+  position: absolute;
+  // top: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.4;
+  height: 100%;
+}
+
+.stack-container .container:nth-child(2) {
+  top: 0px;
+  z-index: 2;
+}
+
+// Vue 原本的內容
 header {
   line-height: 1.5;
   max-height: 100vh;
