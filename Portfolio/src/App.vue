@@ -19,9 +19,10 @@ import HelloWorld from './components/HelloWorld.vue'
     </div>
     <!-- 上層 -->
     <div class="bg-danger container d-flex flex-column justify-content-end pb-5">
-
-        
-        <h1 class="bg-white text-center">Title name</h1>
+        <h1 class="bg-white text-center"> 
+          
+          Title name
+        </h1>
         <h3 class="bg-white text-center">Subtitle</h3>
         <div class="bg-white d-flex justify-content-center mt-3">
           <a class="btn" href="#">Button 1</a>
@@ -50,10 +51,10 @@ import HelloWorld from './components/HelloWorld.vue'
   </div>
 
   <div class="bg-warning container py-5 ">
-    <h1 class="text-center">Title</h1>
+    <h1 class="text-center"></h1>
     <!-- 作品列表 -->
     <div class="row justify-content-center">
-      
+
       <!-- Insert portfolio -->
 
     </div>

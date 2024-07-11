@@ -15,6 +15,7 @@
   },
   "dependencies": {
     "bootstrap": "^5.3.3",
+    "material-symbols": "^0.21.1",
     "pinia": "^2.1.7",
     "sass": "^1.77.6",
     "vue": "^3.4.29",

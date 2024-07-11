@@ -1,5 +1,7 @@
 // import './assets/main.css'
-import '../node_modules/bootstrap/scss/bootstrap.scss'
+import '../node_modules/bootstrap/scss/bootstrap.scss' //Import Bootstrap scss
+
+import '../node_modules/material-symbols/index.css' //Import Material symbols
 
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
