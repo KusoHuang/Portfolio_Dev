@@ -8,14 +8,54 @@ import HelloWorld from './components/HelloWorld.vue'
 <template>
   <!-- 頂部區塊 -->
 
-  <div class="bg-primary stack-container ">
+  <div class="bg-primary stack-container">
     <!-- 下層 -->
-    <div class="bg-warning container">
-      <p>123</p>
+    <div class="bg-warning container py-3" >
+      <div class="row h-100 justify-content-center">
+  
+        <img src="./assets/mainPhoto.png" class="col-6 object-fit-cover" alt="...">
+
+      </div>
     </div>
     <!-- 上層 -->
-    <div class="bg-danger container">
-      <p>456</p>
+    <div class="bg-danger container d-flex flex-column justify-content-end pb-5">
+
+        
+        <h1 class="bg-white text-center">Title name</h1>
+        <h3 class="bg-white text-center">Subtitle</h3>
+        <div class="bg-white d-flex justify-content-center mt-3">
+          <a class="btn" href="#">Button 1</a>
+          <a class="btn" href="#">Button 2</a>
+        
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- 自我介紹 -->
+  <div class="bg-secondary container py-5 text-center">
+    <div class="row justify-content-center">
+
+      <h1 class="col-12 mb-3">Title</h1>
+      <!-- 經歷 -->
+      <div class="bg-white col-8">
+
+        <!-- Insert-history -->
+        
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="bg-warning container py-5 ">
+    <h1 class="text-center">Title</h1>
+    <!-- 作品列表 -->
+    <div class="row justify-content-center">
+      
+      <!-- Insert portfolio -->
+
     </div>
 
   </div>
