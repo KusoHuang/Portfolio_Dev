@@ -1,66 +1,59 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
+import History from './components/History.vue'
+import WorkItem from './components/WorkItem.vue'
 </script>
-
-
 
 <template>
   <!-- 頂部區塊 -->
 
   <div class="bg-primary stack-container">
     <!-- 下層 -->
-    <div class="bg-warning container py-3" >
+    <div class="bg-warning container py-3">
       <div class="row h-100 justify-content-center">
-  
-        <img src="./assets/mainPhoto.png" class="col-6 object-fit-cover" alt="...">
-
+        <img src="./assets/testImage.jpg" class="col-6 object-fit-cover" />
       </div>
     </div>
     <!-- 上層 -->
     <div class="bg-danger container d-flex flex-column justify-content-end pb-5">
-        <h1 class="bg-white text-center"> 
-          
-          Title name
-        </h1>
-        <h3 class="bg-white text-center">Subtitle</h3>
-        <div class="bg-white d-flex justify-content-center mt-3">
-          <a class="btn" href="#">Button 1</a>
-          <a class="btn" href="#">Button 2</a>
-        
+      <h1 class="bg-white text-center">Epic Name</h1>
+      <h3 class="bg-white text-center">Subtitle</h3>
+      <div class="bg-white d-flex justify-content-center mt-3">
+        <a class="btn" href="#">Button 1</a>
+        <a class="btn" href="#">Button 2</a>
       </div>
-
     </div>
-
   </div>
 
-  <!-- 自我介紹 -->
+  <!-- Intro Section -->
   <div class="bg-secondary container py-5 text-center">
     <div class="row justify-content-center">
-
-      <h1 class="col-12 mb-3">Title</h1>
-      <!-- 經歷 -->
+      <h1 class="col-12 mb-3">History Title</h1>
+      <!-- History -->
       <div class="bg-white col-8">
-
         <!-- Insert-history -->
-        
+        <History></History>
       </div>
-
     </div>
-
   </div>
 
-  <div class="bg-warning container py-5 ">
-    <h1 class="text-center"></h1>
-    <!-- 作品列表 -->
+  <div class="bg-warning container py-5">
+    <h1 class="text-center">Work Title</h1>
+    <!-- Work list -->
     <div class="row justify-content-center">
-
-      <!-- Insert portfolio -->
-
+      <!-- Insert work -->
+      <WorkItem Link="#" ImageSrc="./assets/mainPhoto.png">
+        <template #Title>Title</template>
+        <template #Content>Content</template>
+      </WorkItem>
+      <a href="#" style="width: 100px">
+        <img src="./assets/testImage.jpg" class="img-fluid" />
+        <h3>Title</h3>
+        <p>Content</p>
+      </a>
     </div>
-
   </div>
-
 
   <!-- Vue 原本的內容 -->
   <!-- <header class="container mt-5">
