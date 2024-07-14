@@ -12,7 +12,7 @@ import WorkItem from './components/WorkItem.vue'
     <!-- 下層 -->
     <div class="bg-warning container py-3">
       <div class="row h-100 justify-content-center">
-        <img src="./assets/testImage.jpg" class="col-6 object-fit-cover" />
+        <img src="/testImage.jpg" class="col-6 object-fit-cover" />
       </div>
     </div>
     <!-- 上層 -->
@@ -43,12 +43,12 @@ import WorkItem from './components/WorkItem.vue'
     <!-- Work list -->
     <div class="row justify-content-center">
       <!-- Insert work -->
-      <WorkItem Link="#" ImageSrc="./assets/mainPhoto.png">
+      <WorkItem Link="#" ImageSrc="/testImage.jpg">
         <template #Title>Title</template>
         <template #Content>Content</template>
       </WorkItem>
       <a href="#" style="width: 100px">
-        <img src="./assets/testImage.jpg" class="img-fluid" />
+        <img src="/testImage.jpg" class="img-fluid" />
         <h3>Title</h3>
         <p>Content</p>
       </a>

@@ -1,7 +1,7 @@
 <template>
   <HistoryItem>
     <template #img>
-      <img src="../assets/mainPhoto.png" class="img-fluid" />
+      <img src="/mainPhoto.png" class="img-fluid" />
     </template>
     <template #title> Title 1 </template>
     <template #content> content content </template>
@@ -13,7 +13,7 @@
 
   <HistoryItem>
     <template #img>
-      <img src="../assets/mainPhoto.png" class="img-fluid" />
+      <img src="/mainPhoto.png" class="img-fluid" />
     </template>
     <template #title> Title 2 </template>
     <template #content> content content </template>
@@ -25,7 +25,7 @@
 
   <HistoryItem>
     <template #img>
-      <img src="../assets/mainPhoto.png" class="img-fluid" />
+      <img src="/mainPhoto.png" class="img-fluid" />
     </template>
     <template #title> Title 3 </template>
     <template #content> content content </template>
@@ -37,7 +37,7 @@
 
   <HistoryItem>
     <template #img>
-      <img src="../assets/mainPhoto.png" class="img-fluid" />
+      <img src="/mainPhoto.png" class="img-fluid" />
     </template>
     <template #title> Title 4 </template>
     <template #content> content content </template>

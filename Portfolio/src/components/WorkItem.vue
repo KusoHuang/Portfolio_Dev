@@ -1,6 +1,6 @@
 <template>
   <a :href="Link">
-    <img :src="ImageSrc" class="img-fluid" />
+    <img :src="ImageSrc" class="img-fluid" style="width: 100px;" />
     <h3>
       <slot name="Title">Work title</slot>
     </h3>
@@ -11,12 +11,15 @@
 </template>
 
 <script setup lang="ts">
-// import { defineProps } from 'vue'
+
+import { defineProps } from 'vue'
 
 const props = defineProps<{
   Link: string
   ImageSrc: string
 }>()
+
+
 </script>
 
 <style scoped lang="scss">
