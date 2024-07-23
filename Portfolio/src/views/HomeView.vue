@@ -30,7 +30,7 @@ import WorkItem from '../components/WorkItem.vue'
       <div class="row justify-content-center">
         <h1 class="col-12 mb-3">History Title</h1>
         <!-- History -->
-        <div class="bg-white col-8">
+        <div class="col-8">
           <!-- Insert-history -->
           <History></History>
         </div>
